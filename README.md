@@ -1,51 +1,31 @@
-
 # 🔐 File Integrity Checker  
-**Internship Task - 1**  
-**Company:** CODTECH  
 
-## 🧾 Description  
-This tool monitors file changes in a folder by calculating and comparing their hash values using Python’s `hashlib` library. It helps detect any modifications, deletions, or newly added files — ensuring file integrity.
+*COMPANY* : CODE IT SOLUTIONS
 
-## 🚀 Features
-- Calculates SHA-256 hashes for each file
-- Saves and loads hash data from `hashes.json`
-- Detects:
-  - Modified files
-  - Deleted files
-  - New files
+*NAME* : SK SAMEERA
 
-## 🛠️ Requirements
-- Python 3.x
+*INTERN ID* : CT08DM525
 
-## 📂 Usage Instructions
+*DOMAIN* : CYBERSECURITY AND ETHICAL HACKING
 
-### ✅ Step 1: Generate Hashes
-Run this to save the current state of files:
+*DURATION* : 8 WEEKS
 
-```bash
-python file_integrity_checker.py "C:\Path\To\Your\Folder" --generate
-```
+*MENTOR* : NEELA SANTOSH
 
-This creates a `hashes.json` file storing all file hashes.
+DESCRIPTION : The File Integrity Checker is an essential cybersecurity tool that ensures files remain unaltered and secure from unauthorized changes. As part of CodTech Internship Task-1, this project aims to build a Python-based application that monitors file changes by computing and comparing their hash values. File integrity is a critical concern in both personal and enterprise environments. Even minor tampering with important files—whether configuration files, databases, or system binaries—can result in serious issues like data corruption, unauthorized access, or security breaches. Hence, this task equips interns with the skills to develop a reliable and practical solution to this problem.
 
-### 🔍 Step 2: Verify Integrity
-After any changes in files, run:
+The core idea is to use Python's built-in libraries, particularly hashlib, which supports several hashing algorithms like MD5, SHA-1, and SHA-256. These algorithms generate a unique hash (a fixed-length string) for each file based on its content. If the file content changes in any way—even by a single character—the hash output will be completely different. By saving the original hash and comparing it with the current hash value of the file, we can easily determine whether the file has been modified.
 
-```bash
-python file_integrity_checker.py "C:\Path\To\Your\Folder" --verify
-```
+In this project, the intern will develop a Python script that:
 
-This will compare current files against the stored hashes and show:
-- `[OK]` – File unchanged
-- `[MODIFIED]` – File was edited
-- `[MISSING]` – File was deleted
-- `[NEW]` – New file detected
+Allows users to select one or more files.
 
-## 📁 Files Included in Submission
-- `file_integrity_checker.py` – Main Python script
-- `README.md` – This file
-- *(Optional)* `hashes.json` – Example hash record file (auto-generated)
+Calculates and stores the original hash values in a secure manner.
 
-## 🧑‍💻 Developed by
-sk sameera 
-For CODTECH Internship – Task 1
+Periodically (or manually) recalculates hash values and compares them with the originals.
+
+Notifies the user if any discrepancy is found, signaling a potential unauthorized change.
+
+This task promotes the understanding of fundamental cybersecurity concepts such as data integrity, hashing algorithms, and change detection. It also involves basic file handling, user interaction via the command line or GUI, and efficient data comparison methods. The script can be extended to monitor folders, generate logs, or send alerts via email—opening up many creative possibilities for enhancement.
+
+Ultimately, the deliverable is a functional Python script that helps detect unauthorized or accidental modifications in files, ensuring their integrity over time. This task not only enhances the intern's Python programming skills but also introduces them to the practical applications of cryptographic functions in real-world scenarios—an invaluable step for anyone looking to grow in the field of software development or cybersecurity.
