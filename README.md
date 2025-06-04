@@ -29,3 +29,5 @@ Notifies the user if any discrepancy is found, signaling a potential unauthorize
 This task promotes the understanding of fundamental cybersecurity concepts such as data integrity, hashing algorithms, and change detection. It also involves basic file handling, user interaction via the command line or GUI, and efficient data comparison methods. The script can be extended to monitor folders, generate logs, or send alerts via email—opening up many creative possibilities for enhancement.
 
 Ultimately, the deliverable is a functional Python script that helps detect unauthorized or accidental modifications in files, ensuring their integrity over time. This task not only enhances the intern's Python programming skills but also introduces them to the practical applications of cryptographic functions in real-world scenarios—an invaluable step for anyone looking to grow in the field of software development or cybersecurity.
+
+OUTPUT: ![Image](https://github.com/user-attachments/assets/6174c42a-3206-40f9-94e6-e71fd82b3788)
